@@ -1,0 +1,61 @@
+body{
+
+background-color: #2C5A6A;
+background-image: linear-gradient(to left, #CBB26A, #2C5A6A);
+padding-bottom: 90px; /* отступ для футера*/
+overflow: scroll; 
+}
+
+li {
+	display: inline-block;
+    font-size: 40px;
+    font-family: Comic sans MS, Impact, Arial, sans-serif;
+	color: #CBB26A;
+}
+
+a{
+	font-family: Comic sans MS, Impact, Arial, sans-serif;
+	color: #CBB26A;
+	font-size: 40px;
+	text-decoration:none;
+	margin: auto;
+}
+
+.logo{
+	width: 150px; height: 75px; border: 2px solid #CBB26A; border-radius: 50%;
+	display: inline-block;
+}
+
+.text{
+	font-family: Comic sans MS, Impact, Arial, sans-serif;
+	background-color: none;
+    float: left;
+    height: 200px;
+    width: 500px;
+    border: 3px solid none;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+}
+footer{
+	position: absolute; bottom: 0;
+	font-size:18px;
+	text-align:center;
+	font-family: Comic sans MS, Impact, Arial, sans-serif;
+	margin: auto;
+	height: 80px;
+	width: 100%;/* во всю ширину и тогда по центру*/
+}
+
+.button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+}
