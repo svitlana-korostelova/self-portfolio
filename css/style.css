@@ -38,6 +38,7 @@ background-color: #2C5A6A;
 background-image: linear-gradient(to left, #CBB26A, #2C5A6A);
 overflow: scroll; 
 height: 100%;
+width: 100%;
 }
 
 
