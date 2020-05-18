@@ -12,35 +12,57 @@
 
 <script type="text/javascript" src="js/switchLanguage.js"></script> <!-- 'use strict'; -->
 
+<div class="wrapper">
+  <div class="content">
 
-<!-- <div> -->
-	<a href="/">
-    <img style="margin: 10px;"src="images/logo.png" alt="Logo" class="logo" />  
+<nav class="navigation">
+<ul type=none> 
+  <li>
+  <a href="/">
+    <img src="images/logo.png" alt="Logo" class="logo"/>
     </a> 
-<!-- </div> -->
-<!-- <div >
- --><!-- <pre> -->
-     <a href="navigation.html" target="_self" align="center">Learn more>> 
-     </a> 
- <!-- </pre> -->
-<!-- </div> -->
-<div align="right">
-      	<a>
-        <label></label> <select id="selectvalue">
-        <option>English</option>
-        <option>Russian</option>
-        <option>Ukrainian</option>
-    	</select>
-		</a>
+  </li>
+      <li>
+        <a class="english" href="navigation.html" target="_self"> Learn more>></a> 
+        <a class="ukrainian" href="navigation.html" target="_self"> Дізнатися більше>></a> 
+      </li>
+    </ul>
+  
+
+
+<div class="language-selector">
+    <input type="radio" name="language" value="english" id="english" checked="checked" />
+    <label for="english">EN</label>
+    <input type="radio" name="language" value="ukrainian" id="ukrainian" />
+    <label for="ukrainian">UA</label>
+  </div>
+
+</nav>
+
+<article class="article">
+  <img class="article-image" src="images/фото.png" alt="Photo" width="200" />
+
+  <div class="article-content">
+<p class="text ukrainian">  
+  страничка про Svitlana Korostelova бла бла бла 
+  <br>
+
+</p>
+
+<p class="text english">  
+  page Svitlana Korostelova bla bla bla 
+  <br>
+
+</p>
 </div>
+</article>
 
-<a class="text">  <!-- страничка про Svitlana Korostelova бла бла бла <br> -->
-<img src="images/фото.png" alt="Photo" width="400" align="left"/>
-</a>
-
+</div>
 
 <footer>Copyright © 2020 Svitlana Korostelova. All rights reserved.
 </footer>
+</div>
+
 
 </body>
 </html>

@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<ul type=none> 
+<ul type=none class="navigation"> 
 	<li>
 	<a href="/">
     <img src="images/logo.png" alt="Logo" class="logo"/>
@@ -20,12 +20,18 @@
        <a href="modules.html" target="_self"> Modules </a>
       </li>
       <li>
+            <a href="skills.html" target="_self"> Skills </a>
+      </li>
+      
+      <li>
        <a href="contacts.html" target="_self"> Contacts </a>  
       </li>
   	</ul>
 
-  	<div class="text">114/2 Kniaziv Koriatovychiv St.<br> Vinnytsia, 21000, Ukraine.<br>+38(097)8202316<br>svitlana.korostelova@gmail.com 
+  	<div class="text">114/2 Kniaziv Koriatovychiv St.<br> Vinnytsia, 21000, Ukraine.<br>+38(097)8202316<br>svitlana.korostelova@gmail.com <br>
+      Пятий екран. Обов'язковий. Це частина в якій ти вказуєш можливість зворотнього зв'язку (тобто мають бути присутні поля для заповнення), а також контактна інформація, або, простіше кажучи, де ти знаходишся та як з тобою зв'язатись. В продовження цього розділу - футер. Що в ньому буде знаходитись - на твій розсуд. Зазвичай, в ньому розташовані посилання на соціальні мережі, але ти вільний додавати те, що ти ввжаєш потрібним та корисним.
 	</div>
+
 
 
 	<div class="text">
@@ -37,8 +43,25 @@
 	</a>
 	</div>
 
+  <form id="contact-form">
+  <p>Please select your preferred contact method:</p>
+
+  <div>
+    <input type="text" placeholder="Enter your last name" id="lastName" />
+    <br><br>
+    <input type="text" name="firstname" placeholder="Enter your first name" id="firstName"/>
+   
+    <label for="contactChoice2">Phone</label>
+
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+
   	<footer>Copyright © 2020 Svitlana Korostelova. All rights reserved.
 </footer>
+<script type="text/javascript" src="js/feedbackForm.js"></script> 
 </body>
 </html>
 
