@@ -1,50 +1,49 @@
 window.onload = function() {
-	const ukrLang = document.getElementById('ukrainian');
-	const enLang = document.getElementById('english');
+  console.log("sl called");
 
+ const ukrLang = document.getElementById('ukrainian');
+ const enLang = document.getElementById('english');
+ const language = localStorage.getItem("language")
 
-	ukrLang.onchange = function () {
-		// const ukrTexts = document.querySelectorAll('.ukrainian');
-		// const enTexts = document.querySelectorAll('.english');
+ if (language != null) {
+  changeLanguage(language)
+  if (ukrLang != null && language === "ukrainian") {
+    ukrLang.checked = true
+  } else if(enLang != null){
+    enLang.checked = true
+  }
+ }
 
-		// ukrTexts.forEach(function (element) {
-		// 	element.style.display = "block";
-		// });
+ if (ukrLang != null) {
+    ukrLang.onchange = function () {
+      localStorage.setItem("language","ukrainian");
+      changeLanguage("ukrainian");
+     }
+ }
 
-		// enTexts.forEach(function (element) {
-		// 	element.style.display = "none";
-		// });
-		changeLanguage("ukrainian");
-	}
+ if (enLang != null) {
+  enLang.onchange = function () {
+    localStorage.setItem("language","english");
+    changeLanguage("english");
+   }
+ }
+ 
 
-	enLang.onchange = function () {
-		// const ukrTexts = document.querySelectorAll('.ukrainian');
-		// const enTexts = document.querySelectorAll('.english');
+ 
 
-		// ukrTexts.forEach(function (element) {
-		// 	element.style.display = "none";
-		// });
+ function changeLanguage(language) {
+  const ukrTexts = document.querySelectorAll('.ukrainian');
+  const enTexts = document.querySelectorAll('.english');
 
-		// enTexts.forEach(function (element) {
-		// 	element.style.display = "block";
-		// });
+  let ukrDisplay = language === "english" ? "none" : "block"
+  let engDisplay = language === "english" ? "block" : "none"
 
-		changeLanguage("english");
-	}
+  ukrTexts.forEach(function (element) {
+   element.style.display = ukrDisplay;
+  });
 
-	function changeLanguage(language) {
-		const ukrTexts = document.querySelectorAll('.ukrainian');
-		const enTexts = document.querySelectorAll('.english');
-
-		let ukrDisplay = language === "english" ? "none" : "block"
-		let engDisplay = language === "english" ? "block" : "none"
-		
-		ukrTexts.forEach(function (element) {
-			element.style.display = ukrDisplay;
-		});
-
-		enTexts.forEach(function (element) {
-			element.style.display = engDisplay;
-		});
-	}
+  enTexts.forEach(function (element) {
+   element.style.display = engDisplay;
+  });
+ }
 }

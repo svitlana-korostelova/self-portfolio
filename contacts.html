@@ -6,63 +6,92 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <script src="js/feedbackForm.js"></script>
+  <script src="js/switchLanguage.js"></script> 
+  
 
-<ul type=none class="navigation"> 
+<div class="wrapper">
+  <div class="content">
+
+<nav>
+<ul type=none> 
 	<li>
 	<a href="/">
     <img src="images/logo.png" alt="Logo" class="logo"/>
     </a> 
 	</li>
-      <li>
-        <a href="navigation.html" target="_self"> About </a> 
+       <li>
+        <a class="english" href="navigation.html" target="_self"> About</a>
+         <a class="ukrainian" href="navigation.html" target="_self">Про автора</a> 
       </li>
       <li>
-       <a href="modules.html" target="_self"> Modules </a>
+       <a class="english" href="projects.html" target="_self"> Projects </a>
+        <a class="ukrainian" href="projects.html" target="_self"> Проекти </a>
       </li>
-      <li>
-            <a href="skills.html" target="_self"> Skills </a>
+        <li>
+             <a class="english" href="skills.html" target="_self"> Skills </a>
+       <a class="ukrainian" href="skills.html" target="_self"> Навички </a>
       </li>
-      
+    
       <li>
-       <a href="contacts.html" target="_self"> Contacts </a>  
+       <a class="english" href="contacts.html" target="_self"> Contacts </a>
+        <a class="ukrainian" href="contacts.html" target="_self"> Контакти </a>
       </li>
   	</ul>
 
-  	<div class="text">114/2 Kniaziv Koriatovychiv St.<br> Vinnytsia, 21000, Ukraine.<br>+38(097)8202316<br>svitlana.korostelova@gmail.com <br>
-      Пятий екран. Обов'язковий. Це частина в якій ти вказуєш можливість зворотнього зв'язку (тобто мають бути присутні поля для заповнення), а також контактна інформація, або, простіше кажучи, де ти знаходишся та як з тобою зв'язатись. В продовження цього розділу - футер. Що в ньому буде знаходитись - на твій розсуд. Зазвичай, в ньому розташовані посилання на соціальні мережі, але ти вільний додавати те, що ти ввжаєш потрібним та корисним.
-	</div>
+    <div class="language-selector">
+    <input type="radio" name="language" value="english" id="english" checked="checked" />
+    <label for="english">EN</label>
+    <input type="radio" name="language" value="ukrainian" id="ukrainian" />
+    <label for="ukrainian">UA</label>
+  </div>
+     </nav>
+      <article class="article">
+  <div class="article-content">
+    <p class="text ukrainian">       Пятий екран. Обов'язковий. Це частина в якій ти вказуєш можливість зворотнього зв'язку (тобто мають бути присутні поля для заповнення), а також контактна інформація, або, простіше кажучи, де ти знаходишся та як з тобою зв'язатись. В продовження цього розділу - футер. Що в ньому буде знаходитись - на твій розсуд. Зазвичай, в ньому розташовані посилання на соціальні мережі, але ти вільний додавати те, що ти ввжаєш потрібним та корисним.<br>
 
+</p>
+<p class="text english">114/2 Kniaziv Koriatovychiv St.<br> Vinnytsia, 21000, Ukraine.<br>svitlana.korostelova@gmail.com
+  <a class="text english" href ="tel:+380978202316">+380978202316</a>
 
+</p>
 
+</div> 
+</article>
 
-
+<br>
+<!-- <script type="text/javascript" src="js/feedbackForm.js"></script> -->
   <form id="contact-form">
-  <p>Please select your preferred contact method:</p>
-
+  <p class="text english">If you are interested in this page, leave your contacts:</p>
+<p class="text ukrainian">Якщо Вас зацікавила сторінка, залиште свої контактні дані</p>
   <div>
-    <input type="text" placeholder="Enter your last name" id="lastName" />
-    <br><br>
-    <input type="text" name="firstname" placeholder="Enter your first name" id="firstName"/>
+    <input type="text" name="userName" placeholder="Enter your name" id="userName" /><br><br>
+    <input type="text" name="phone" placeholder="Enter your phone" id="phone"/><br><br>
+    <input type="text" name="mail" placeholder="Enter your e-mail" id="mail"/><br><br>
    
-    <label for="contactChoice2">Phone</label>
+    <!-- <label for="contactChoice2">Phone</label> -->
 
   </div>
   <div>
     <button type="submit">Submit</button>
   </div>
 </form>
-
-  	<footer>Copyright © 2020 Svitlana Korostelova. All rights reserved.
-        <div class="text">
-    <a href="https://www.facebook.com/" target="_blank">
-    <img src="https://c7.hotpng.com/preview/646/856/863/computer-icons-facebook-like-button-fb-icon-png.jpg" alt="facebook" width="30"/>
+</div>
+  	<footer>
+        <p class="english">Copyright © 2020 Svitlana Korostelova. All rights reserved.</p>
+  <p class="ukrainian">Авторські права захищено © 2020</p>
+    <a href="https://www.facebook.com/profile.php?id=100005131995321" target="_blank">
+    <img src="images/socialNetworks/logoFacebook.png" alt="Facebook" id="facebook"/>
     </a>
-  <a href="https://www.linkedin.com/" target="_blank">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Linkedin.svg/1200px-Linkedin.svg.png" alt="linkedIn" width="30"/>
+  <a href="https://www.linkedin.com/in/svitlana-korostelova-6036051aa/" target="_blank">
+  <img src="images/socialNetworks/logoLinkedIn.png" alt="LinkedIn" id="linkedin"/>
   </a>
-  </div>
+   <a href="https://github.com/svitlana-korostelova" target="_blank">
+  <img src="images/socialNetworks/logoGitHub.png" alt="GitHub" id="github"/>
+  </a>
 </footer>
-<script type="text/javascript" src="js/feedbackForm.js"></script> 
+   
+ </div>
 </body>
 </html>
 

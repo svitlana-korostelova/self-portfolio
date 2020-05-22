@@ -1,7 +1,8 @@
 
     // 'use strict';
 
-window.onload = function() {
+window.onpageshow = function() {
+console.log("ff called");
 
 const users = [];
 
@@ -13,21 +14,23 @@ function formSubmit(e) {
 
 	e.preventDefault();
 	
-    const firstName = document.querySelector('input[name=firstname]');
+    const userName = document.querySelector('input[name=userName]');
+	const phone = document.querySelector('input[name=phone]');
+	const mail = document.querySelector('input[name=mail]');
+    users.push({ usename: userName.value, phone: phone.value, email: mail.value});
 
-    users.push({ usename: firstName.value, phone: 123 });
-
-    console.log(users[0]);
+    console.log(users);
+    alert('Thank You! We will contact You soon!');
 }
 
 
 // const firstName = document.querySelector('input[name=firstname]');
 
-// firstName.onkeyup = showAlert;
+formSubmit.onkeyup = showAlert;
 
-// function showAlert(event) {
-//     alert(firstName.value);
-//   }
+function showAlert(event) {
+    alert('Thank You! We will contact You soon!');
+  }
 
 // console.log(firstName);
 
