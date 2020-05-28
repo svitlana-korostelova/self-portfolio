@@ -12,6 +12,8 @@ window.onload = function() {
   } else if(enLang != null){
     enLang.checked = true
   }
+ } else {
+  enLang.checked = true
  }
 
  if (ukrLang != null) {
