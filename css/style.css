@@ -36,9 +36,9 @@ nav {
     /*padding-left: 20px;*/
 }
 
-.navsettings{ 
+.navsettings {
     font-size: 1 rem;
-} 
+}
 
 
 footer {
@@ -162,9 +162,9 @@ tr:hover {
     /*   left: -9999px;*/
 }
 
-/*.ukrainian {
+.ukrainian {
     display: none;
-}*/
+}
 
 .language-selector input+label {
     /*width: 30%;*/
