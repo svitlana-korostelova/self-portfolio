@@ -7,6 +7,7 @@ html,
 body,
 .wrapper {
     height: 100%;
+    font-size: 1px;
 }
 
 .content {
@@ -34,6 +35,11 @@ nav {
     /*padding-right: 20px;*/
     /*padding-left: 20px;*/
 }
+
+.navsettings{ 
+    font-size: 1 rem;
+} 
+
 
 footer {
     /*position: fixed;*/
@@ -105,7 +111,9 @@ a:hover {
 }
 
 .article {
-    display: block;
+    /*display: block;*/
+    display: flex;
+    flex-direction: column;
     text-align: justify;
     /*justify-content: flex-start;*/
 }
@@ -118,13 +126,13 @@ a:hover {
 .article-content {
     padding-left: 20px;
     padding-right: 20px;
-    display: flex;
+    /*display: flex;*/
     text-align: justify;
 }
 
 table {
     border-collapse: collapse;
-  /*  width: 80%;*/
+    /*  width: 80%;*/
 }
 
 th,
@@ -167,7 +175,7 @@ tr:hover {
     display: inline-block;
     border: solid 1px #DDD;
     background-color: #CBB26A;
-    font-size: 1rem;
+    font-size: 18rem;
     line-height: 200%;
     font-weight: 400;
     text-align: center;
@@ -192,6 +200,30 @@ tr:hover {
     border-color: #DDD;
     z-index: 1;
 }
+
+@media (max-width: 767px) {
+    .navsettings {
+        font-size: calc(24rem + 1vw);
+    }
+
+    p,
+    .text {
+        font-size: calc(17rem + 1vh);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navsettings {
+        font-size: calc(30rem + 1vw);
+    }
+
+    p,
+    .text {
+        font-size: calc(16rem + 1vh);
+    }
+}
+
+
 
 #facebook {
 
