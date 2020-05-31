@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>KSG Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://intita.com/api/dist/intita-api-client.min.js"></script>
 </head>
 
 <body>
@@ -13,25 +14,25 @@
     <div class="wrapper">
         <div class="content">
             <nav>
-                <ul type=none>
-                    <li>
+                <ul>
+                    <li class="displays">
                         <a href="index.html">
                             <img src="images/logo.png" alt="Logo" class="logo" />
                         </a>
                     </li>
-                    <li>
+                    <li class="displays">
                         <a class="english" href="navigation.html" target="_self"> About</a>
                         <a class="ukrainian" href="navigation.html" target="_self">Про автора</a>
                     </li>
-                    <li>
+                    <li class="displays">
                         <a class="english" href="projects.html" target="_self"> Projects </a>
                         <a class="ukrainian" href="projects.html" target="_self"> Проекти </a>
                     </li>
-                    <li>
+                    <li class="displays">
                         <a class="english" href="skills.html" target="_self"> Skills </a>
                         <a class="ukrainian" href="skills.html" target="_self"> Навички </a>
                     </li>
-                    <li>
+                    <li class="displays">
                         <a class="english" href="contacts.html" target="_self"> Contacts </a>
                         <a class="ukrainian" href="contacts.html" target="_self"> Контакти </a>
                     </li>
@@ -46,42 +47,64 @@
             <!-- Пятий екран. Обов'язковий. Це частина в якій ти вказуєш можливість зворотнього зв'язку (тобто мають бути присутні поля для заповнення), а також контактна інформація, або, простіше кажучи, де ти знаходишся та як з тобою зв'язатись. В продовження цього розділу - футер. Що в ньому буде знаходитись - на твій розсуд. Зазвичай, в ньому розташовані посилання на соціальні мережі, але ти вільний додавати те, що ти ввжаєш потрібним та корисним. -->
             <article class="article">
                 <div class="article-content">
-                    <p class="text ukrainian"> 114/2 вул. Князів Коріатовичів <br> Вінниця 21000, Україна.<br>svitlana.korostelova@gmail.com
-                        <a class="text english" href="tel:+380978202316">+380978202316</a><br>
-                    </p>
-                    <p class="text english">114/2 Kniaziv Koriatovychiv St.<br> Vinnytsia, 21000, Ukraine.<br>svitlana.korostelova@gmail.com
-                        <a class="text english" href="tel:+380978202316">+380978202316</a>
-                    </p>
+                    <!-- <p class="text ukrainian"> 114/2 вул. Князів Коріатовичів <br> Вінниця 21000, Україна.<br>svitlana.korostelova@gmail.com -->
+                    <p><span class="text ukrainian">Адреса:</span><span class="text ukrainian" id="address"></span></p>
+                    <p><span class="text ukrainian">Пошта:</span><span class="text ukrainian" id="email"></span></p>
+                    <span>
+                        <p>
+                            <a class="text ukrainian" href="tel:+380978202316">+380978202316</a><br>
+                        </p>
+                        <p class="text english">Address: 114/2 Kniaziv Koriatovychiv St. Vinnytsia, Ukraine.<br>Email: svitlana.korostelova@gmail.com</p>
+                        <p>
+                            <a class="text english" href="tel:+380978202316">+380978202316</a>
+                        </p>
                 </div>
             </article>
             <br>
-            <!-- <script type="text/javascript" src="js/feedbackForm.js"></script> -->
-            <form id="contact-form">
-                <p class="text english">If you are interested in this page, leave your contacts:</p>
-                <p class="text ukrainian">Якщо Вас зацікавила сторінка, залиште свої контактні дані</p>
-                <div>
-                    <input type="text" name="userName" placeholder="Enter your name" id="userName" /><br><br>
-                    <input type="text" name="phone" placeholder="Enter your phone" id="phone" /><br><br>
-                    <input type="text" name="mail" placeholder="Enter your e-mail" id="mail" /><br><br>
-                    <!-- <label for="contactChoice2">Phone</label> -->
-                </div>
-                <div>
-                    <button type="submit">Submit</button>
-                </div>
-            </form>
+            <!-- <form id="contact-form"> -->
+            <p class="text english">If you are interested in this page, leave your contacts:</p>
+            <p class="text ukrainian">Якщо Вас зацікавила сторінка, залиште свої контактні дані</p>
+            <div class="contact-form">
+                <form id="contact-form">
+                    <label class="text english" for="userName">Name</label>
+                    <label class="text ukrainian" for="userName">Ім'я</label>
+                    <input type="text" id="userName" name="userName" class="text placeholder" placeholder="Enter Your name...">
+                    <label class="text english" for="mail">E-mail</label>
+                    <label class="text ukrainian" for="mail">Електронна пошта</label>
+                    <input type="text" id="mail" name="mail" class="text placeholder" placeholder="Enter Your e-mail...">
+                    <label class="text english" for="phone">Phone</label>
+                    <label class="text ukrainian" for="phone">Номер телефону</label>
+                    <!-- style="font-size: smaller;" -->
+                    <input type="text" id="phone" name="phone" class="text placeholder" placeholder="Enter Your phone number...">
+                    <label class="text english" for="userLang">What language you prefer to contact?</label>
+                    <label class="text ukrainian" for="userLang">Якою мовою Вам зручніше спілкуватися?</label>
+                    <select class="text placeholder" id="userLang" name="userLang">
+                        <option value="English">EN</option>
+                        <option value="Russian">RU</option>
+                        <option value="Ukrainian">UA</option>
+                    </select>
+                    <label class="text english" for="subject">Comment</label>
+                    <label class="text ukrainian" for="subject">Коментарі</label>
+                    <textarea id="subject" name="subject" class="text placeholder" placeholder="Write something..." style="height:100px"></textarea>
+                    <!-- <input type="submit" value="Submit">Submit -->
+                    <button class="text" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
         <footer>
             <p class="english">Copyright © 2020 Svitlana Korostelova. All rights reserved.</p>
             <p class="ukrainian">Авторські права захищено © 2020</p>
-            <a href="https://www.facebook.com/profile.php?id=100005131995321" target="_blank">
-                <img src="images/socialNetworks/logoFacebook.png" alt="Facebook" id="facebook" />
-            </a>
-            <a href="https://www.linkedin.com/in/svitlana-korostelova-6036051aa/" target="_blank">
-                <img src="images/socialNetworks/logoLinkedIn.png" alt="LinkedIn" id="linkedin" />
-            </a>
-            <a href="https://github.com/svitlana-korostelova" target="_blank">
-                <img src="images/socialNetworks/logoGitHub.png" alt="GitHub" id="github" />
-            </a>
+            <div class="socialnetworks">
+                <a href="https://www.facebook.com/profile.php?id=100005131995321" target="_blank">
+                    <img src="images/socialNetworks/logoFacebook.png" alt="Facebook" id="facebook" />
+                </a>
+                <a href="https://www.linkedin.com/in/svitlana-korostelova-6036051aa/" target="_blank">
+                    <img src="images/socialNetworks/logoLinkedIn.png" alt="LinkedIn" id="linkedin" />
+                </a>
+                <a href="https://github.com/svitlana-korostelova" target="_blank">
+                    <img src="images/socialNetworks/logoGitHub.png" alt="GitHub" id="github" />
+                </a>
+            </div>
         </footer>
     </div>
 </body>

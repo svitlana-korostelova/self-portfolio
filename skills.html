@@ -6,6 +6,7 @@
     <title>KSG Portfolio</title>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://intita.com/api/dist/intita-api-client.min.js"></script>
 </head>
 
 <body>
@@ -13,25 +14,25 @@
     <div class="wrapper">
         <div class="content">
             <nav>
-                <ul type=none>
-                    <li>
+                <ul>
+                    <li class="displays">
                         <a href="index.html">
                             <img src="images/logo.png" alt="Logo" class="logo" />
                         </a>
                     </li>
-                    <li>
+                    <li class="displays">
                         <a class="english" href="navigation.html" target="_self"> About</a>
                         <a class="ukrainian" href="navigation.html" target="_self">Про автора</a>
                     </li>
-                    <li>
+                    <li class="displays">
                         <a class="english" href="projects.html" target="_self"> Projects </a>
                         <a class="ukrainian" href="projects.html" target="_self"> Проекти </a>
                     </li>
-                    <li>
+                    <li class="displays">
                         <a class="english" href="skills.html" target="_self"> Skills </a>
                         <a class="ukrainian" href="skills.html" target="_self"> Навички </a>
                     </li>
-                    <li>
+                    <li class="displays">
                         <a class="english" href="contacts.html" target="_self"> Contacts </a>
                         <a class="ukrainian" href="contacts.html" target="_self"> Контакти </a>
                     </li>
@@ -57,89 +58,90 @@
                         Ability to explain difficult things in a simple way<br>
                         Good negotiation skills<br><br>
                     </p>
-                                <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">№</th>
-                        <th scope="col">
-                            <p class="text english">Skills</p>
-                            <p class="text ukrainian">Навички</p>
-                        </th>
-                        <th scope="col">
-                            <p class="text english">Level</p>
-                            <p class="text ukrainian">Рівень</p>
-                        </th>
-                        <th scope="col">
-                            <p class="text english">Comment</p>
-                            <p class="text ukrainian">Коментарій</p>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>
-                            <p class="text english">Swift</p>
-                            <p class="text ukrainian">Swift</p>
-                        </td>
-                        <td>
-                            <p class="text english">novice</p>
-                            <p class="text ukrainian">початковий</p>
-                        </td>
-                        <td>
-                            <p class="text english"> Start learning</p>
-                            <p class="text ukrainian">Почала вивчати</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>
-                            <p class="text english">С-language</p>
-                            <p class="text ukrainian">Мова С</p>
-                        </td>
-                        <td>
-                            <p class="text english">novice</p>
-                            <p class="text ukrainian">початковий</p>
-                        </td>
-                        <td>
-                            <p class="text english">Learned several courses of basic knowledge with certificates, developed and defended the project "Data base CRM"</p>
-                            <p class="text ukrainian">Закінчила декілька сертифікованих курсів з базових знань, розробила та захистила проект "База даних CRM"</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>
-                            <p class="text english">Scratch</p>
-                            <p class="text ukrainian">Scratch</p>
-                        </td>
-                        <td>
-                            <p class="text english">novice</p>
-                            <p class="text ukrainian">початковий</p>
-                        </td>
-                        <td>
-                            <p class="text english">Educational project "Autopilot" and the game Feed the horse"</p>
-                            <p class="text ukrainian">Навчальний проект "Автопілот" та гра "Нагодуй конячку" </p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">№</th>
+                                <th scope="col">
+                                    <p class="text english">Skills</p>
+                                    <p class="text ukrainian">Навички</p>
+                                </th>
+                                <th scope="col">
+                                    <p class="text english">Level</p>
+                                    <p class="text ukrainian">Рівень</p>
+                                </th>
+                                <th scope="col">
+                                    <p class="text english">Comment</p>
+                                    <p class="text ukrainian">Коментарій</p>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>
+                                    <p class="text english">Swift</p>
+                                    <p class="text ukrainian">Swift</p>
+                                </td>
+                                <td>
+                                    <p class="text english">novice</p>
+                                    <p class="text ukrainian">початковий</p>
+                                </td>
+                                <td>
+                                    <p class="text english"> Start learning</p>
+                                    <p class="text ukrainian">Почала вивчати</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>
+                                    <p class="text english">С-language</p>
+                                    <p class="text ukrainian">Мова С</p>
+                                </td>
+                                <td>
+                                    <p class="text english">novice</p>
+                                    <p class="text ukrainian">початковий</p>
+                                </td>
+                                <td>
+                                    <p class="text english">Learned several courses of basic knowledge with certificates, developed and defended the project "Data base CRM"</p>
+                                    <p class="text ukrainian">Закінчила декілька сертифікованих курсів з базових знань, розробила та захистила проект "База даних CRM"</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>
+                                    <p class="text english">Scratch</p>
+                                    <p class="text ukrainian">Scratch</p>
+                                </td>
+                                <td>
+                                    <p class="text english">novice</p>
+                                    <p class="text ukrainian">початковий</p>
+                                </td>
+                                <td>
+                                    <p class="text english">Educational project "Autopilot" and the game Feed the horse"</p>
+                                    <p class="text ukrainian">Навчальний проект "Автопілот" та гра "Нагодуй конячку" </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </article>
             <!--  Xcode - novice. Github - novice. Mantis Bug Tracker - novice. TestLink - novice. 1C Accounting Software - expert. Bookkeeping - advanced. -->
-
         </div>
         <footer>
             <p class="english">Copyright © 2020 Svitlana Korostelova. All rights reserved.</p>
             <p class="ukrainian">Авторські права захищено © 2020</p>
-            <a href="https://www.facebook.com/profile.php?id=100005131995321" target="_blank">
-                <img src="images/socialNetworks/logoFacebook.png" alt="Facebook" id="facebook" />
-            </a>
-            <a href="https://www.linkedin.com/in/svitlana-korostelova-6036051aa/" target="_blank">
-                <img src="images/socialNetworks/logoLinkedIn.png" alt="LinkedIn" id="linkedin" />
-            </a>
-            <a href="https://github.com/svitlana-korostelova" target="_blank">
-                <img src="images/socialNetworks/logoGitHub.png" alt="GitHub" id="github" />
-            </a>
+            <div class="socialnetworks">
+                <a href="https://www.facebook.com/profile.php?id=100005131995321" target="_blank">
+                    <img src="images/socialNetworks/logoFacebook.png" alt="Facebook" id="facebook" />
+                </a>
+                <a href="https://www.linkedin.com/in/svitlana-korostelova-6036051aa/" target="_blank">
+                    <img src="images/socialNetworks/logoLinkedIn.png" alt="LinkedIn" id="linkedin" />
+                </a>
+                <a href="https://github.com/svitlana-korostelova" target="_blank">
+                    <img src="images/socialNetworks/logoGitHub.png" alt="GitHub" id="github" />
+                </a>
+            </div>
         </footer>
     </div>
 </body>

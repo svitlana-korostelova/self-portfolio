@@ -3,23 +3,26 @@
 
 <head>
     <meta charset="utf-8">
+    <!--  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <title>KSG Portfolio</title>
     <!--         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://intita.com/api/dist/intita-api-client.min.js"></script>
+    <!-- <link rel="icon" href="/favicon.ico">  -->
 </head>
 
 <body>
     <script type="text/javascript" src="js/switchLanguage.js"></script>
     <div class="wrapper">
         <div class="content">
-            <nav class="navsettings">
-                <ul type=none>
-                    <li>
+            <nav>
+                <ul>
+                    <li class="displays">
                         <a href="index.html">
                             <img src="images/logo.png" alt="Logo" class="logo" />
                         </a>
                     </li>
-                    <li>
+                    <li class="displays">
                         <a class="english" href="navigation.html" target="_self"> Learn more>></a>
                         <a class="ukrainian" href="navigation.html" target="_self"> Дізнатися більше>></a>
                     </li>
@@ -33,11 +36,12 @@
                 </div>
             </nav>
             <article style="flex-direction: row;" class="article">
-                <img class="article-image" src="images/фото.png" alt="Photo" />
+                <img class="photo" src="images/фото.png" alt="Photo" />
                 <div class="article-content">
-                    <p class="text ukrainian">
+                    <!--                     <p class="text ukrainian">
                         Вітаю! Ви потрапили на особисту сторінку - портфоліо студентки Вінницької ІТ-Академії Коростельової Світлани <br>
-                    </p>
+                    </p> -->
+                    <p><span class="text ukrainian">Вітаю! Я студентка Вінницької ІТ-Академії </span><span class="text ukrainian" id="name"></span> <span class="text ukrainian">Це моя собиста сторінка - портфоліо.</span></p>
                     <p class="text english">
                         Hello! You are on the personal portfolio page of Svitlana Korostelova, a student of Vinnytsia IT Academy <br>
                         <br>
@@ -48,15 +52,17 @@
         <footer>
             <p class="english">Copyright © 2020 Svitlana Korostelova. All rights reserved.</p>
             <p class="ukrainian">Авторські права захищено © 2020</p>
-            <a href="https://www.facebook.com/profile.php?id=100005131995321" target="_blank">
-                <img src="images/socialNetworks/logoFacebook.png" alt="Facebook" id="facebook" />
-            </a>
-            <a href="https://www.linkedin.com/in/svitlana-korostelova-6036051aa/" target="_blank">
-                <img src="images/socialNetworks/logoLinkedIn.png" alt="LinkedIn" id="linkedin" />
-            </a>
-            <a href="https://github.com/svitlana-korostelova" target="_blank">
-                <img src="images/socialNetworks/logoGitHub.png" alt="GitHub" id="github" />
-            </a>
+            <div class="socialnetworks">
+                <a href="https://www.facebook.com/profile.php?id=100005131995321" target="_blank">
+                    <img src="images/socialNetworks/logoFacebook.png" alt="Facebook" id="facebook" />
+                </a>
+                <a href="https://www.linkedin.com/in/svitlana-korostelova-6036051aa/" target="_blank">
+                    <img src="images/socialNetworks/logoLinkedIn.png" alt="LinkedIn" id="linkedin" />
+                </a>
+                <a href="https://github.com/svitlana-korostelova" target="_blank">
+                    <img src="images/socialNetworks/logoGitHub.png" alt="GitHub" id="github" />
+                </a>
+            </div>
         </footer>
     </div>
 </body>
