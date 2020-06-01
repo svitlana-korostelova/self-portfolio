@@ -8,16 +8,17 @@ window.onpageshow = function() {
 
     form.onsubmit = formSubmit;
 
-    function formSubmit(e) {
+    function formSubmit(contactUs) {
 
-        e.preventDefault();
+        contactUs.preventDefault();
 
         const userName = document.querySelector('input[name=userName]');
         const phone = document.querySelector('input[name=phone]');
         const mail = document.querySelector('input[name=mail]');
         const userLang = document.querySelector('select[name=userLang]');
-        users.push({ name: userName.value, phone: phone.value, email: mail.value, language: userLang.value });
-        console.log(userLang.value);
+        const comment = document.querySelector('textarea[name=subject]');
+        users.push({ name: userName.value, phone: phone.value, email: mail.value, language: userLang.value, comment: comment.value});
+        
         if (userLang.value === 'Ukrainian') {
             alert('Дякуємо! Ми з Вами скоро зв`яжемося!');
         } else if (userLang.value === 'Russian') {
