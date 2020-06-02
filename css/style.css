@@ -22,51 +22,32 @@ body,
 
 
 nav {
-    /*width: 100%;*/
-    /*display: inline-block;*/
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
     padding-top: 20px;
-    /*padding-right: 20px;*/
-    /*padding-left: 20px;*/
     font-size: 1px;
 }
 
 
 footer {
-    /*position: fixed;*/
     height: 80px;
     margin-top: -80px;
-    /*font-size: 18px;*/
-    /*font-size: medium;*/
     font-size: 1px;
-    /*bottom: 0;*/
     text-align: center;
     font-family: Comic sans MS, Impact, Arial, sans-serif;
-    /* display: block;*/
 }
 
-.socialnetworks {
-    display: flex;
-    flex-direction: row;
-    margin-left: 45%;
-    margin-right: 45%;
-    justify-content: space-around;
-    /*font-size: 36px;*/
-}
 
 body {
     background-color: #2C5A6A;
     background-image: linear-gradient(to left, #CBB26A, #2C5A6A);
     background-repeat: initial;
-    overflow: scroll;
+   /* overflow: scroll;*/
 }
 
 
 li {
-    /*display: block;*/
-    /*проверить как по умолчанию агент стайл в других браузерах*/
     margin-left: 20px;
     list-style-type: circle;
 }
@@ -75,9 +56,6 @@ li {
     display: inline-block;
 }
 
-/*padding-left:100px;*/
-
-
 li:hover {
     text-decoration: underline;
 }
@@ -85,19 +63,12 @@ li:hover {
 a {
     font-family: Comic sans MS, Impact, Arial, sans-serif;
     color: #CBB26A;
-    /*font-size: 36px;*/
     text-decoration: none;
-    /*margin-left: 20px;*/
-    /*font-size: 1px;*/
 }
 
 a:hover {
     color: #CBB26A;
 }
-
-/*p {
-    text-indent: 30px;
-}*/
 
 .logo {
     width: 100px;
@@ -114,18 +85,13 @@ a:hover {
     border: 3px solid none;
     text-align: left;
     padding: 10px;
-    /*letter-spacing: 1px;*/
-    /*font-size: 18px;*/
-    /*font-size: medium;*/
     font-size: 1px;
 }
 
 .article {
-    /*display: block;*/
     display: flex;
     flex-direction: column;
     text-align: justify;
-    /*justify-content: flex-start;*/
 }
 
 .photo {
@@ -143,20 +109,16 @@ a:hover {
 .article-content {
     padding-left: 20px;
     padding-right: 20px;
-    /*display: flex;*/
     text-align: justify;
 }
 
 table {
     border-collapse: collapse;
-    /*  width: 80%;*/
 }
 
 th,
 td {
-    padding: 8px;
     text-align: left;
-    /*text-align: justify;*/
     border-bottom: 1px solid #ddd;
 }
 
@@ -169,14 +131,11 @@ tr:hover {
     margin-left: 5px;
     display: flex;
     font-family: Comic sans MS, Impact, Arial, sans-serif;
-    /*position: relative;*/
 }
 
 .language-selector input {
     width: 0;
     height: 0;
-    /*  position: absolute;*/
-    /*   left: -9999px;*/
 }
 
 .ukrainian {
@@ -184,7 +143,7 @@ tr:hover {
 }
 
 .language-selector input+label {
-    /*width: 30%;*/
+    width: 70px;
     height: 50px;
     margin: 0;
     padding: .50rem 1rem;
@@ -193,7 +152,7 @@ tr:hover {
     border: solid 1px #DDD;
     background-color: #CBB26A;
     font-size: 18rem;
-    line-height: 200%;
+    line-height: 230%;
     font-weight: 400;
     text-align: center;
     box-shadow: 0 0 0 rgba(255, 255, 255, 0);
@@ -226,8 +185,6 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    /*    margin-top: 6px;
-    margin-bottom: 6px;*/
     resize: vertical;
 }
 
@@ -246,8 +203,6 @@ button[type=submit]:hover {
 }
 
 .contact-form {
-    /*    margin-right: auto;
-    margin-left: auto;*/
     width: 100%;
     border-radius: 5px;
     background-color: #2C5A6A;
@@ -262,9 +217,41 @@ button[type=submit]:hover {
 }
 
 
-@media (max-width: 767px) {
+#facebook {
+    width: 4%;
+    height: 4%;
+    border: 2px solid #CBB26A;
+    border-radius: 50%;
+    margin-right: 3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
-    /*.navsettings*/
+#linkedin {
+    width: 4%;
+    height: 4%;
+    border: 2px solid #CBB26A;
+    border-radius: 50%;
+    margin-right: 3%;
+    margin-bottom: 10px;
+}
+
+#github {
+    width: 3.6%;
+    height: 3.6%;
+    border: 2px solid #CBB26A;
+    border-radius: 50%;
+    margin-right: 3%;
+    margin-bottom: 10px;
+}
+
+.table {
+    font-size: 1px;
+    font-family: Comic sans MS, Impact, Arial, sans-serif;
+    padding: 10px;
+}
+
+@media (max-width: 767px) {
     nav {
         font-size: calc(24rem + 1vw);
     }
@@ -275,8 +262,25 @@ button[type=submit]:hover {
     }
 
     .placeholder {
-        font-size: calc(9rem + 1vh);
+        font-size: calc(10rem + 1vh);
     }
+
+    #facebook,
+    #linkedin {
+        width: 9%;
+        height: 9%;
+    }
+
+    #github {
+        width: 8.3%;
+        height: 8.3%;
+    }
+
+    .table {
+        font-size: calc(9rem + 1vh);
+        padding: 2px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -285,12 +289,24 @@ button[type=submit]:hover {
     }
 
     p,
-    .text {
+    .text,
+    .table {
         font-size: calc(14rem + 1vh);
     }
 
     .placeholder {
         font-size: calc(8rem + 1vh);
+    }
+
+    #facebook,
+    #linkedin {
+        width: 5%;
+        height: 5%;
+    }
+
+    #github {
+        width: 4.5%;
+        height: 4.5%;
     }
 }
 
@@ -300,33 +316,12 @@ button[type=submit]:hover {
     }
 
     p,
-    .text {
+    .text,
+    .table {
         font-size: calc(13rem + 1vh);
     }
 
     .placeholder {
         font-size: calc(7rem + 1vh);
     }
-}
-
-#facebook {
-
-    width: 30px;
-    height: 30px;
-    border: 2px solid #CBB26A;
-    border-radius: 50%;
-}
-
-#linkedin {
-    width: 30px;
-    height: 30px;
-    border: 2px solid #CBB26A;
-    border-radius: 50%;
-}
-
-#github {
-    width: 30px;
-    height: 30px;
-    border: 2px solid #CBB26A;
-    border-radius: 50%;
 }

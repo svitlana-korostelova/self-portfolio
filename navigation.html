@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <title>KSG Portfolio</title>
-    <!--             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://intita.com/api/dist/intita-api-client.min.js"></script>
 </head>
@@ -13,7 +12,6 @@
     <script type="text/javascript" src="js/script.js"></script>
     <div class="wrapper">
         <div class="content">
-            <!-- style="display: inline-block;" -->
             <nav>
                 <ul>
                     <li class="displays">
@@ -38,7 +36,6 @@
                         <a class="ukrainian" href="contacts.html" target="_self"> Контакти </a>
                     </li>
                 </ul>
-                <!-- Другий екран. Ця частина має містити в собі навігацію по твоєму портфоліо, а також інформацію про те, які послуги ти можеш надати. Коротше кажучи, тут ти маєш вказати, хто ти та що ти робиш -->
                 <div class="language-selector">
                     <input type="radio" name="language" value="english" id="english" checked="checked" />
                     <label for="english">EN</label>
@@ -48,18 +45,23 @@
             </nav>
             <article class="article">
                 <div class="article-content">
-                    <p class="text ukrainian">Моєю метою, як студента ІТ-Академії, є поглиблене навчання навичкам програмування для участі в цікавих проектах та подальшого стажування в ІТ компанії, грунтуючись на отриманих знаннях.<p>
-                            <p><span class="text ukrainian"><br>Моя освіта:</span><span class="text ukrainian" id="education"></span></p>
-                            <a class="text ukrainian" href="https://docs.google.com/document/d/1D9IfJ9SnEGy9R5PsXR03LzRe9-dRoiQX_X0xAMzD3IU/edit?usp=sharing" target="_blank">Детальніше можна ознайомитись з резюме тут>>
+                    <p class="text ukrainian">Моєю метою, як студента ІТ-Академії, є поглиблене навчання навичкам програмування для участі в цікавих проектах та подальшого стажування в ІТ компанії,
+                        <p class="text ukrainian">Моя освіта:</p>
+                        <p class="text ukrainian" id="education"></p>
+                        <a class="text ukrainian" href="https://docs.google.com/document/d/1D9IfJ9SnEGy9R5PsXR03LzRe9-dRoiQX_X0xAMzD3IU/edit?usp=sharing" target="_blank">Детальніше можна ознайомитись з резюме тут>>
+                        </a>
+                        <a class="text ukrainian" href="https://drive.google.com/drive/folders/1zXOQRgcigeaep1CL6YkKuzKCxy0Uo3bo?usp=sharing" target="_blank">Переглянути сертифікати можна тут>>
+                        </a>
+                        <p class="text ukrainian">У ІТ-Академії я вивчаю:</p>
+                        <div class="text ukrainian" id="courses"></div>
+                        <div class="text ukrainian" id="modules"></div>
+                        <p class="text english">My goal, as a student of the IT Academy, is a deep training of programming skills to participate in interesting projects and further trainee in an IT company, based on the acquired knowledge.</p>
+                        <p class="text english">My education:<br>VFEU. MSc in Accounting and Auditing.<br><br>
+                            <a class="text english" href="https://docs.google.com/document/d/1D9IfJ9SnEGy9R5PsXR03LzRe9-dRoiQX_X0xAMzD3IU/edit?usp=sharing" target="_blank">You can read more about me in the CV here>>
                             </a>
-                            <p class="text ukrainian">У ІТ-Академії я вивчаю:</p>
-                            <div class="text ukrainian" id="courses"></div>
-                            <div class="text ukrainian" id="modules"></div>
-                            <p class="text english">My goal, as a student of the IT Academy, is a deep training of programming skills to participate in interesting projects and further trainee in an IT company, based on the acquired knowledge.</p>
-                            <p class="text english"><br>My education:<br>VFEU. MSc in Accounting and Auditing.<br><br>
-                                <a class="text english" href="https://docs.google.com/document/d/1D9IfJ9SnEGy9R5PsXR03LzRe9-dRoiQX_X0xAMzD3IU/edit?usp=sharing" target="_blank">You can read more about me in the CV here>>
-                                </a>
-                                In IT-Academy I am studying:<br>Mobile Development (iOS, Swift)</p>
+                            <a class="text english" href="https://drive.google.com/drive/folders/1zXOQRgcigeaep1CL6YkKuzKCxy0Uo3bo?usp=sharing" target="_blank">Review the certificates here>>
+                            </a>
+                            <p class="text english"> In IT-Academy I am studying:<br>Mobile Development (iOS, Swift)</p>
                             <div class="text english" style="display: block;">
                                 <li>Intro to Programming </li>
                                 <li>Elementary math</li>
@@ -79,14 +81,19 @@
                                 <li>Modern Technologies of Software Development</li>
                                 <li>Diploma project (Swift)</li>
                             </div>
-                            <!-- добавить English for beginners, English Marathon<br>-->
+                            <p class="text english">
+                                <br>In addition, at the IT Academy I succsessfully completed modules English for beginners and English marathon for IT.</p>
+                            <p class="text ukrainian">
+                                <br>Крім цього я успішно завершила модулі Англійська для початківців та Англійська для IT спеціалістів.</p>
                 </div>
             </article>
         </div>
         <footer>
-            <p class="english">Copyright © 2020 Svitlana Korostelova. All rights reserved.</p>
-            <p class="ukrainian">Авторські права захищено © 2020</p>
-            <div class="socialnetworks">
+            <div style="padding-top: 7%;">
+                <p class="english">Copyright © 2020 Svitlana Korostelova. All rights reserved.</p>
+                <p class="ukrainian">Авторські права захищено © 2020</p>
+            </div>
+            <div>
                 <a href="https://www.facebook.com/profile.php?id=100005131995321" target="_blank">
                     <img src="images/socialNetworks/logoFacebook.png" alt="Facebook" id="facebook" />
                 </a>
