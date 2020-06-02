@@ -126,6 +126,27 @@ window.onload = function() {
 
 
     function changeLanguage(language) {
+        const phone = document.getElementById("phone");
+        const subject = document.getElementById("subject");
+        const userName = document.getElementById("userName");
+        if (language === "ukrainian") {
+            userName.setAttribute("placeholder", "Введіть Ваше ПIБ...");
+            mail.setAttribute("placeholder", "Введіть Вашу електронну скриньку...");
+            phone.setAttribute("placeholder", "Введіть Ваш номер телефону...");
+            subject.setAttribute("placeholder", "Напишіть щось...");
+            
+            
+            
+        } else {
+            userName.setAttribute("placeholder", "Enter Your full name...");
+            mail.setAttribute("placeholder", "Enter Your e-mail...");
+            phone.setAttribute("placeholder", "Enter Your phone number...");
+            subject.setAttribute("placeholder", "Write something...");
+            
+        }
+
+
+
         const ukrTexts = document.querySelectorAll('.ukrainian');
         const enTexts = document.querySelectorAll('.english');
 
